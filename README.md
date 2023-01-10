@@ -9,7 +9,24 @@
 
 First step:
 
-Install package `npm install`, next migrate postgre `npm run migrate up`
+Install package `npm install`, before running the table migration create an .env file with the contents as below, and adjust the contents of the postgre node configuration according to the PostgreSQL configuration you are using on your local device.
+
+.env
+
+```
+# Server Configuration
+HOST=localhost
+PORT=3030
+
+# Node Postgre Configuration
+PGHOST=
+PGPORT=
+PGUSER=
+PGPASSWORD=
+PGDATABASE=
+```
+
+Next, migrate table `npm run migrate up`.
 
 To run the service:
 
