@@ -15,9 +15,9 @@ const routes = (handler) => [
     handler: handler.getActivityGroupByIdHandler,
   },
   {
-    method: 'PATCH',
+    method: 'PUT',
     path: '/activity-groups/{id}',
-    handler: handler.patchActivityGroupByIdHandler,
+    handler: handler.putActivityGroupByIdHandler,
   },
   {
     method: 'DELETE',

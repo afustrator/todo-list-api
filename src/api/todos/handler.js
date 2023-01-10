@@ -50,7 +50,7 @@ class TodosHandler {
     }
   }
 
-  async patchTodoItemByIdHandler(request) {
+  async putTodoItemByIdHandler(request) {
     this._validator.validatePutTodoPayloadSchema(request.payload)
     const { id } = request.params
     const { title, isActive, priority } = request.payload

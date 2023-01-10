@@ -15,9 +15,9 @@ const routes = (handler) => [
     handler: handler.getTodoItemByIdHandler,
   },
   {
-    method: 'PATCH',
+    method: 'PUT',
     path: '/todo-items/{id}',
-    handler: handler.patchTodoItemByIdHandler,
+    handler: handler.putTodoItemByIdHandler,
   },
   {
     method: 'DELETE',

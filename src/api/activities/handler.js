@@ -45,7 +45,7 @@ class ActivitiesHandler {
     }
   }
 
-  async patchActivityGroupByIdHandler(request) {
+  async putActivityGroupByIdHandler(request) {
     this._validator.validatePutActivityPayload(request.payload)
     const { id } = request.params
 
